@@ -10,90 +10,76 @@
 \usetheme{Frankfurt}
 \usecolortheme{whale}
 
-\title{Historia de Git y sistemas de control de versión}
+\title{Conceptos de Git}
 \author{Emmanuel Arias \href{mailto:emmanuelarias30@gmail.com}{emmanuelarias30@gmail.com}}
+\date{}
 \begin{document}
 \begin{frame}[plain]
     \maketitle
 \end{frame}
-\begin{frame}{Nacimiento de Git}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\linewidth]{img/LinusTorvalds}
-	\label{fig:linustorvalds}
-\end{figure}
+
+\begin{frame}
+	\Huge Procesos o etapas de Git
 \end{frame}
-\begin{frame}{Sistemas de control de versión}
+
+\begin{frame}{Proceso o etapas de Git}
+	\begin{figure}
+		\centering
+		\includegraphics[width=1\linewidth]{img/stages}
+		\label{fig:stages}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Procesos o etapas de Git}
 \begin{itemize}
-	\item Un sistema de control de versiones es un sistema que registra todos los cambios
-	que se realizan a un archivo o conjunto de ellos.
-	\item Lo más importante a mencionar aquí es que estos sistemas guardan historia. Por lo que
-	vamos a poder saber cómo fue evolucionando un archivo (o software) a lo largo de "la historia".
-	\item Estos sistemas no son exclusivos de programadores, si no que puede ser utilizado
-	por cualquiera que necesite hacer un seguimiento de los cambios realizados.
-\end{itemize}	
+	\item Untracked: Se refiere a los archivos que no están en stagging ni tampoco en la base de datos. Son archivos nuevos que no están registrados.
+	\item Stagged: Es la versión actual de tus archivos y/o proyecto. Es lo que en un futuro se convertirá en parte "freezada" del proyecto o software, es decir cuando ya pase por un commit.
+	En este momento el archivo o cambio no está en el repositorio todavía, si no que está próximamente a estarlo.
+\end{itemize}
 \end{frame}
 
 \begin{frame}
-   \Huge Tipos de sistemas de control de versión
+	 \begin{itemize}
+		\item Modified: Archivos que fueron modificados en el respositorio y por lo tanto, no es la versión que está almacenada en el repositorio. Para que este cambio llegue al respositorio, primero debe pasar por Stagged y recien puede ir a la base de datos.
+	 	\item Commited o Base de datos o  Repositorio: Significa que estos archivos ya están en la base de datos. Es decir están almacenados en el repositorio.
+	 \end{itemize}
 \end{frame}
 
-\begin{frame}{Sistemas de Control de Versiones Locales}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\linewidth]{img/local}
-		\label{fig:local}
-	\end{figure}
+\begin{frame}
+   \Huge Git Internals
 \end{frame}
 
-\begin{frame}{Sistemas de Control de Versiones Centralizados}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\linewidth]{img/central}
-		\label{fig:central}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Sistemas de Control de Versiones Distribuidos}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\linewidth]{img/distribuido}
-		\caption{}
-		\label{fig:distribuido}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Git}
+\begin{frame}{Git Internals}
 	\begin{itemize}
-		\item Es un sistema de control de versión o sistema de gestión de código fuente. Una de las característica es que es distribuido.
-		\item Es un software que permite registrar todos los cambios que se realizan en el código fuentes de cualquier proyecto.
-		\item Este sistema permite comparar fácilmente diferentes versiones del proyecto, y moverse en estas.
-		\item Brinda la flexibilidad de que puedan trabajar muchas personas en un mismo proyecto de eficientemente.
-		\item Es un sistema distribuido por lo que no es necesario la existencia de un repositorio central (por ejemplo, svn)
-		\item Permite una buena gestión de ramas y permite gestionar proyectos grandes.
-		
+		\item En git los archivos se almacenan en archivos \textbf{blobs} (binary large objects)
+		\item La ventaja de usar estos Blob y un archivo normal es que estos últimos guardan metadata. En cambio los Blobs es solo contenido.
+		\item Cada blob es identificado por un código has SHA-1. 
+		\item En Git cada directorio o carpeta se lo llama Tree. También identificado por un hash SHA-1.
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Ventajas de Git}
-	\begin{itemize}
-		\item Existen múltiples repositorios redundantes y ramificaciones.
-		\item Cada usuario tiene una copia completa del proyecto haciendo que el acceso a la historia sea extremadamente rápida.
-		\item Puede ser utilizado con poco o sin conexión a Internet.
-		\item Al ser un sistema distribuido, no hay que otorgar acceso a otras personas para que puedan utilizar las funciones de control de versiones. En vez de eso, es el dueño del repositorio el que decide a qué cambios realizar el merge y de quién.
-		\item Como Git tiene el repositorio localmente no hay latencia en el trabajo, salvo cuando se requiera
-		realizar push y pull.
-	\end{itemize}
+\begin{frame}{Git Internals}
+	\begin{figure}
+		\centering
+		\includegraphics[width=1\linewidth]{img/tree-blobs}
+		\label{fig:tree-blobs}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Git Internals - Commit}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{img/tree-blobs1}
+	\label{fig:tree-blobs1}
+\end{figure}
 \end{frame}
 
 \begin{frame}[plain]{Links interesantes}
 	\begin{itemize}
-		\item \href{https://www.infoworld.com/article/2670360/linus-torvalds--bitkeeper-blunder.html}{BitKeepr y Linus}
-		\item \href{https://www.conasa.es/blog/git-10-anos-controlando-versiones/}{Info Git}
-		\item \href{https://git-scm.com}{git scm}
-		\item \href{https://www.atlassian.com/git/articles/10-years-of-git}{infografía de la historia de Git}		
+		\item \href{https://git-scm.com/book/es/v2/Los-entresijos-internos-de-Git-Los-objetos-Git}{Los objetos de Git}
+		\item \href{https://www.bitdegree.org/learn/git-cheat-sheet}{Git cheat sheet}
+		\item \href{https://almasumfahim.com/git-stages/}{Git stages}
 	\end{itemize}
-	
-	
 \end{frame}
+
 \end{document}
