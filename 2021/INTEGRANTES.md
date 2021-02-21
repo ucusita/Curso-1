@@ -1,8 +1,10 @@
 # Integrantes
+
 Lorena Moesch
 Emmanuel Arias
 Emmanuel Mercado
 M.Eugenia Moreno
+Ignacio Nicolas Neira
 Javier Pintos
 Juan Avila
 Jorge Luis Morales
