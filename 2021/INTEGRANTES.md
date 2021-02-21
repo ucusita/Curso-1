@@ -3,6 +3,7 @@
 Emmanuel Arias
 Emmanuel Mercado
 M.Eugenia Moreno
+Guillermo Arancio
 Agustín Aleksandroff
 Bracco Ignacio
 Jorge Nicolas Martin
