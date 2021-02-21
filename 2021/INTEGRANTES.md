@@ -3,6 +3,7 @@ Lorena Moesch
 Emmanuel Arias
 Emmanuel Mercado
 M.Eugenia Moreno
+Javier Pintos
 Juan Avila
 Jorge Luis Morales
 Luciano Montero
