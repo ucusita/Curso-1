@@ -3,6 +3,7 @@
 Emmanuel Arias
 Emmanuel Mercado
 M.Eugenia Moreno
+Juan Avila
 Jorge Luis Morales
 Luciano Montero
 Marcelo Roldán
