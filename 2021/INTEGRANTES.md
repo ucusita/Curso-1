@@ -13,3 +13,4 @@ José Antonio Chavez
 Cortés Ramírez Lucas
 Rodrigo Torres
 Enzo Rodriguez S
+Esteban Luna Mercado
