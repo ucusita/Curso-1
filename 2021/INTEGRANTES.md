@@ -4,6 +4,7 @@ Lorena Moesch
 Emmanuel Arias
 Emmanuel Mercado
 M.Eugenia Moreno
+Hernan Octavio de la Vega
 Fabio Quintana
 Leonela Aldana Baurer
 Ignacio Nicolas Neira
@@ -25,4 +26,3 @@ Rodrigo Torres
 Enzo Rodriguez S
 Esteban Luna Mercado
 Martín E. dos Santos
-
