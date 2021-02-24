@@ -9,7 +9,6 @@ Hernan Octavio de la Vega
 Fabio Quintana
 Leonela Aldana Baurer
 Ignacio Nicolas Neira
-Javier Pintos
 Juan Avila
 Jorge Luis Morales
 Luciano Montero
@@ -27,3 +26,4 @@ Rodrigo Torres
 Enzo Rodriguez S
 Esteban Luna Mercado
 Martín E. dos Santos
+Javier Pintos
