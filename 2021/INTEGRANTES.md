@@ -27,3 +27,10 @@ Enzo Rodriguez S
 Esteban Luna Mercado
 Martín E. dos Santos
 Javier Pintos
+Ezequiel Cardozo
+Javier Pintos ..
+Juan J. Robles
+Lucas Oscar Bracco
+Ortego Giuliano Federico
+Leonardo J. Morales
+Estefania Gonzalez
