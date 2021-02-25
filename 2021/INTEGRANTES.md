@@ -26,6 +26,7 @@ Rodrigo Torres
 Enzo Rodriguez S
 Esteban Luna Mercado
 Martín E. dos Santos
+Ezequiel Cardozo
 Javier Pintos ..
 Juan J. Robles
 Lucas Oscar Bracco
