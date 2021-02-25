@@ -4,6 +4,7 @@ Lorena Moesch
 Emmanuel Arias
 Emmanuel Mercado
 M.Eugenia Moreno
+Maximiliano Mercado Diaz
 Daniela Cabrera
 Rafael Moyano
 Carlos Marcelo Nieva
