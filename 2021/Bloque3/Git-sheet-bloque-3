@@ -1,0 +1,43 @@
+Resumen
+-------
+
+Merge
+-----
+Pasos (teoricos) a seguir son:
+
+1. pararme en la rama dónde yo quiero recibir el merge.
+git checkout master, git checkout <target-branch>
+2. actualizar la rama antes de mergear.
+
+git pull origin main... git pull origin <target-branch> -> solamente no somos los unicos que trabajamos en  esa rama
+
+3. git merge <rama>
+
+Practica -  cuando trabajamos en equipo
+--------
+
+2 opciones:
+
+1. Forma larga, recomendada por Emmanuel
+
+a)  git checkout main (o rama que utilizamos para partir nuestras ramas)
+b) git pull origin main (o rama que utilizamos para partir nuestras ramas)
+c)  git checkout <target-branch>
+d) git merge main (o rama que utilizamos para partir nuestras ramas)
+e) si tienen conflictos resuelven
+f) hacer los cambios que queremos
+g) git add <aarchivos>
+h)  git commit
+i) git push origin <target-branch>
+-----
+
+2. forma corta, y rapida
+
+Supuestos: vengo trabajo en mi rama, <target-branch>
+
+a) git pull origin main (o rama que utilizamos para partir nuestras ramas) -> master, main, develop, stagting, v1.0.0, etc....
+b) si es que hay conflictos resolver.
+c) hacer los cambios que queremos
+d) git add <aarchivos>
+e) git commit
+f) git push origin <target-branch>
